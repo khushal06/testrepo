@@ -1,15 +1,15 @@
 # TI-84 Plus CE Calculator Clone
 
-A faithful recreation of the TI-84 Plus CE graphing calculator built with modern web technologies. This project demonstrates advanced React patterns, TypeScript, and accessible UI design.
+A beautiful, interactive recreation of the TI-84 Plus CE graphing calculator built with modern web technologies. This is a **frontend-only** application that runs entirely in your browser.
 
 ## 🚀 Features
 
 - **Authentic Layout**: Faithful recreation of the TI-84 Plus CE keypad layout
-- **Interactive Keys**: All keys are clickable with visual feedback
-- **Keyboard Support**: Full keyboard shortcuts for desktop use
+- **Interactive Keys**: All keys are clickable with smooth animations
 - **2nd/Alpha Modes**: Toggle modes that change key labels (just like the real calculator)
 - **Visual Feedback**: Smooth animations using Framer Motion
 - **Graph Display**: Mock quadratic function graph using Recharts
+- **Keyboard Support**: Full keyboard shortcuts for desktop use
 - **Accessibility**: ARIA labels, keyboard navigation, and screen reader support
 - **Responsive Design**: Works on all screen sizes
 - **Type Safety**: Full TypeScript implementation
@@ -52,22 +52,23 @@ A faithful recreation of the TI-84 Plus CE graphing calculator built with modern
 ## 📁 Project Structure
 
 ```
-src/
-├── components/          # React components
-│   ├── Calculator.tsx  # Main calculator component
-│   ├── Screen.tsx      # Display screen with graph
-│   ├── Keypad.tsx      # Keypad layout
-│   ├── Key.tsx         # Individual key component
-│   └── NavPad.tsx      # Navigation pad (arrows + enter)
-├── hooks/              # Custom React hooks
-│   └── useCalculatorState.ts  # Calculator state management
-├── lib/                # Utility functions and constants
-│   ├── layout.ts       # Key layout definitions
-│   └── keyHandlers.ts  # Key action mappings
-├── styles/             # Global styles
-│   └── globals.css     # Tailwind + custom CSS
-└── test/               # Test setup
-    └── setup.ts        # Vitest configuration
+client/
+├── src/
+│   ├── components/          # React components
+│   │   ├── Calculator.tsx  # Main calculator component
+│   │   ├── Screen.tsx      # Display screen with graph
+│   │   ├── Keypad.tsx      # Keypad layout
+│   │   ├── Key.tsx         # Individual key component
+│   │   └── NavPad.tsx      # Navigation pad (arrows + enter)
+│   ├── hooks/              # Custom React hooks
+│   │   └── useCalculatorState.ts  # Calculator state management
+│   ├── lib/                # Utility functions and constants
+│   │   ├── layout.ts       # Key layout definitions
+│   │   └── keyHandlers.ts  # Key action mappings
+│   ├── styles/             # Global styles
+│   │   └── globals.css     # Tailwind + custom CSS
+│   └── test/               # Test setup
+│       └── setup.ts        # Vitest configuration
 ```
 
 ## 🚀 Getting Started
@@ -80,12 +81,13 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd ti84-calculator
+   git clone https://github.com/khushal06/testrepo.git
+   cd testrepo
    ```
 
 2. **Install dependencies**
    ```bash
+   cd client
    npm install
    ```
 
@@ -222,4 +224,5 @@ If you encounter any issues or have questions:
 ---
 
 **Built with ❤️ using React, TypeScript, and Tailwind CSS**
-# testrepo
+
+*This is a frontend-only application - no backend server required!*
